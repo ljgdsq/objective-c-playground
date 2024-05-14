@@ -18,6 +18,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Hello, world!");
+        Person* person=[Person new];
+        [person speakSome];
+
     }
     return 0;
 }
