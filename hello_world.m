@@ -5,11 +5,16 @@
 @property (readonly) NSString* firstName;
 @property NSString* lastName;
 -(void) speakSome;
+-(void) speakWithArg:(NSString*)str;
 @end
 
 @implementation Person
 -(void) speakSome{
     NSLog(@"hello Person");
+}
+
+-(void) speakWithArg:(NSString*)str{
+      NSLog(@"hello Person:%@",str);
 }
 
 @end
@@ -20,6 +25,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, world!");
         Person* person=[Person new];
         [person speakSome];
+        [person speakWithArg:@"speakWithArg zzzz"];
 
     }
     return 0;
