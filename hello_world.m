@@ -15,6 +15,11 @@
 
 -(void) speakWithArg:(NSString*)str{
       NSLog(@"hello Person:%@",str);
+      [self callSelfFunc:str];
+}
+
+-(NSString*) callSelfFunc:(NSString*) str{
+       NSLog(@"callSelfFunc:%@",str);
 }
 
 @end
