@@ -9,7 +9,7 @@
 
 @implementation Person
 -(void) speakSome{
-    NSLog("hello Person");
+    NSLog(@"hello Person");
 }
 
 @end
